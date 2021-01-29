@@ -1,0 +1,13 @@
+/*
+white = #fafafb
+teal = #115861
+navy = #2A446D
+astronaut = 2A446D
+*/
+
+.heading {
+  @apply font-bold uppercase text-3xl;
+
+  color: #115861;
+  font-family: 'Oswald', 'sans-serif';
+}

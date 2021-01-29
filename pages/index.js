@@ -1,82 +1,51 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center py-2">
       <Head>
-        <title>Create Next App</title>
+        <title>CSS Workshop</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
+      <main className="container mx-auto text-center mt-12">
         <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
+          CSS Workshop
         </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+        <section className="mt-6 max-w-xl mx-auto">
+          <div className="text-left">
+            <p>
+              Where I go to improve my CSS chops, and to experiment with interaction design.
+              I will be scanning through <a href="https://dribbble.com" className="underline text-blue-700">Dribbble</a> and choosing
+              various designs to attempt to implement. (I'm not much of a designer...) With that said,
+              I will only be choosing designs where I can easily find matching or similar images and illustrations.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+            <h2 className="text-4xl font-semibold mt-4 mb-2">Guidelines For Myself:</h2>
+            <ol className="list-decimal pl-4 inline-block text-left">
+              <li>Attributions everywhere!</li>
+              <li>If there are very obvious a11y issues, I will deviate from the original design to fix it.</li>
+              <li>However, I will not always aim for perfect AA compliance.</li>
+              <li>IE 11 Support....maybe</li>
+            </ol>
+          </div>
+        </section>
+        <section className="max-w-6xl mx-auto mt-8">
+          <h2>Design Pending</h2>
+          <ul className="list-disc inline-block">
+            <li>
+              <Link href="/experiment-one">
+                <a>Experiment One <br/></a>
+              </Link>
+              <a href="https://dribbble.com/shots/14313928-Kuproy-co-Interior-Design-Agency-Landing-Page">Original Shot</a> by <a href="https://dribbble.com/choirulsyafril">Choirul Syafril</a>
+            </li>
+          </ul>
+        </section>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
+      <footer className="flex items-center justify-center w-full h-24 border-t mt-8">
+        &copy; Copyright 2021
       </footer>
     </div>
-  )
+  );
 }
