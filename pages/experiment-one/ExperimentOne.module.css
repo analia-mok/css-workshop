@@ -5,9 +5,108 @@ navy = #2A446D
 astronaut = 2A446D
 */
 
-.heading {
-  @apply font-bold uppercase text-3xl;
+.largeHeading {
+  @apply font-medium uppercase text-5xl tracking-normal;
 
   color: #115861;
   font-family: 'Oswald', 'sans-serif';
+}
+.largeHeading span:after {
+  content: '\A';
+  display: block;
+  height: 20px;
+}
+
+.heading {
+  @apply font-medium uppercase text-3xl tracking-normal;
+
+  color: #115861;
+  font-family: 'Oswald', 'sans-serif';
+}
+
+.companyLogo {
+  @apply font-medium uppercase text-xl tracking-wider;
+
+  color: #3b7e8b;
+  font-family: 'Oswald', 'sans-serif';
+}
+
+.navLinks {
+  @apply flex items-center;
+}
+.navLinks li {
+  @apply font-normal uppercase text-xl ml-14 tracking-wide;
+
+  color: #2a446d;
+  font-family: 'Oswald', 'sans-serif';
+}
+
+.heroContent {
+  @apply bg-white p-16 pt-0 absolute top-0 right-0 left-1/2;
+}
+.heroContent h1 {
+  @apply mb-4 text-5xl;
+}
+.heroContent h1 span:after {
+  content: '\A';
+  display: block;
+  height: 20px;
+}
+.heroContent p {
+  @apply font-normal text-lg;
+
+  font-family: 'Roboto', 'sans-serif';
+  color: #4c6d73;
+}
+
+.primaryBtn {
+  @apply inline-block text-lg font-medium uppercase py-4 px-12 tracking-wide leading-relaxed;
+
+  background-color: #115861;
+  color: #ffffff;
+  font-family: 'Oswald', 'sans-serif';
+}
+
+.stat {
+  @apply mr-12;
+}
+
+.stat:nth-child(2) {
+  @apply text-center;
+}
+.stat:nth-child(3) {
+  @apply text-right;
+}
+
+.stat strong {
+  @apply font-medium uppercase text-5xl tracking-normal mb-6 block;
+
+  color: #115861;
+  font-family: 'Oswald', 'sans-serif';
+}
+
+.card p,
+.stat p {
+  @apply text-xl;
+
+  color: #4c6d73;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.card {
+  @apply flex-1 mr-12;
+}
+
+.card:last-child {
+  @apply mr-0;
+}
+
+.card p {
+  @apply mt-4;
+}
+
+.card small {
+  @apply text-gray-500;
+
+  font-family: 'Roboto', 'sans-serif';
 }
