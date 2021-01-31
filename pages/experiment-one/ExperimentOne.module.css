@@ -55,14 +55,29 @@ astronaut = 2A446D
 .heroContent p {
   @apply font-normal text-lg;
 
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'Open Sans', 'sans-serif';
   color: #4c6d73;
 }
 
 .primaryBtn {
-  @apply inline-block text-lg font-medium uppercase py-4 px-12 tracking-wide leading-relaxed;
+  @apply inline-block text-center text-lg font-medium uppercase py-4 px-12 tracking-wide leading-relaxed;
 
   background-color: #115861;
+  color: #ffffff;
+  font-family: 'Oswald', 'sans-serif';
+}
+.secondaryBtn {
+  @apply inline-block text-center text-lg font-medium uppercase py-4 px-12 tracking-wide leading-relaxed mb-4;
+
+  background-color: #ffffff;
+  color: #2a446d;
+  font-family: 'Oswald', 'sans-serif';
+}
+.secondaryBtnOutline {
+  @apply inline-block text-center text-lg font-medium uppercase py-4 px-12 tracking-wide leading-relaxed;
+
+  background-color: #115861;
+  border: 2px solid #ffffff;
   color: #ffffff;
   font-family: 'Oswald', 'sans-serif';
 }
@@ -90,7 +105,7 @@ astronaut = 2A446D
   @apply text-xl;
 
   color: #4c6d73;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'Open Sans', 'sans-serif';
 }
 
 .card {
@@ -108,5 +123,67 @@ astronaut = 2A446D
 .card small {
   @apply text-gray-500;
 
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+.listedContentSection {
+  @apply py-20 flex items-center;
+}
+
+.listedContentSection h3 {
+  @apply font-medium uppercase text-2xl tracking-normal mb-4;
+
+  color: #115861;
+  font-family: 'Oswald', 'sans-serif';
+}
+
+.listedContentSection p {
+  @apply text-lg;
+
+  font-family: 'Open Sans', sans-serif;
+  color: #115861;
+}
+
+.listedContentSection li {
+  max-width: calc(50% - 1rem);
+}
+
+.ctaText {
+  @apply text-xl leading-relaxed;
+
+  font-family: 'Open Sans', sans-serif;
+  color: #115861;
+}
+
+.contactUs {
+  @apply flex p-20;
+
+  background-color: #115861;
+  color: #ffffff;
+}
+.contactUs h2 {
+  @apply font-medium uppercase text-5xl tracking-normal mb-8;
+
+  color: #ffffff;
+  font-family: 'Oswald', 'sans-serif';
+}
+.contactUs p {
+  @apply text-lg;
+
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+.contactUs a {
+  @apply block;
+}
+
+.footer {
+  @apply max-w-7xl mx-auto py-20;
+}
+
+.footer p {
+  @apply text-xl uppercase;
+
+  font-family: 'Oswald', 'sans-serif';
+  color: #115861;
 }
